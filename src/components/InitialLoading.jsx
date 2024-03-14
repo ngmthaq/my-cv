@@ -2,7 +2,7 @@ import { memo, useEffect, useState } from "react";
 import { Fade } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import { Player } from "@lottiefiles/react-lottie-player";
-import lottiefileConfigs from "../../assets/lottiefiles/initial-loading.json";
+import lottiefileConfigs from "../assets/lottiefiles/initial-loading.json";
 
 const InitialLoading = () => {
   const [isOpen, setIsOpen] = useState(true);
@@ -34,5 +34,5 @@ const Container = styled("div")(() => ({
   top: "0",
   left: "0",
   zIndex: "99999",
-  background: "#fff",
+  background: "#ffffff",
 }));
