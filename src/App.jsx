@@ -1,13 +1,12 @@
 import { Fragment } from "react";
-import { RouterProvider } from "react-router-dom";
 import CssBaseline from "@mui/material/CssBaseline";
-import router from "./router";
+import { InitialLoading } from "./components";
 
 const App = () => {
   return (
     <Fragment>
       <CssBaseline enableColorScheme />
-      <RouterProvider router={router} />
+      <InitialLoading />
     </Fragment>
   );
 };
