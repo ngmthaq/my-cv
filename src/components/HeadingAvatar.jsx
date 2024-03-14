@@ -7,7 +7,7 @@ const HeadingAvatar = () => {
     <BoxContainer id="heading-avatar">
       <Avatar alt="Nguyen Manh Thang" src="/icon.png" sx={{ width: 160, height: 160 }} />
       <Box sx={{ paddingBottom: "24px" }}>
-        <Typography variant="h4" sx={{ color: "#ffffff" }}>
+        <Typography variant="h4" sx={{ color: "#ffffff", marginBottom: "4px" }}>
           Nguyen Manh Thang
         </Typography>
         <Typography variant="subtitle1" sx={{ color: "#f0f0f0" }}>

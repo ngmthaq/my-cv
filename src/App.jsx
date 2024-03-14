@@ -3,6 +3,8 @@ import CssBaseline from "@mui/material/CssBaseline";
 import Container from "@mui/material/Container";
 import InitialLoading from "./components/InitialLoading";
 import Heading from "./components/Heading";
+import Profile from "./components/Profile";
+import Projects from "./components/Projects";
 
 export const AppContext = createContext({});
 
@@ -40,8 +42,10 @@ const App = () => {
     <AppContext.Provider value={ContextValue}>
       <CssBaseline enableColorScheme />
       <InitialLoading />
-      <Container>
+      <Container maxWidth="lg">
         <Heading />
+        {tab === PROFILE_TAB && <Profile />}
+        {tab === PROJECTS_TAB && <Projects />}
       </Container>
     </AppContext.Provider>
   );
