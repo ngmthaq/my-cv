@@ -1,6 +1,7 @@
-import HomePageView from "../pages/HomePage";
+import HomePage from "../pages/HomePage";
 
-export const HomePage = {
-  path: "/",
-  element: <HomePageView />,
+const routes = {
+  pathHomePage: { path: "/", element: <HomePage /> },
 };
+
+export default routes;

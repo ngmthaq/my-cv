@@ -1,12 +1,8 @@
 import { memo } from "react";
-import { BaseLayout } from "../../layouts";
+import HomePageView from "./view";
 
-const HomePageView = () => {
-  return (
-    <BaseLayout>
-      <p>Hello World</p>
-    </BaseLayout>
-  );
+const HomePage = () => {
+  return <HomePageView />;
 };
 
-export default memo(HomePageView);
+export default memo(HomePage);
