@@ -10,7 +10,7 @@ const InitialLoading = () => {
   useEffect(() => {
     setTimeout(() => {
       setIsOpen(false);
-    }, 1000);
+    }, 2000);
   }, []);
 
   return (

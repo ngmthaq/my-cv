@@ -5,7 +5,9 @@
 }
 
 body {
-    background-color: #fafbfb;
+    background-color: #fafbfb !important;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
 .poppins-thin {

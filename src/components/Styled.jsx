@@ -4,12 +4,12 @@ import { styled } from "@mui/material/styles";
 export const PaperContainer = styled(Paper)(() => ({
   margin: "16px 0",
   overflow: "hidden",
-  borderRadius: "16px",
+  borderRadius: "8px",
 }));
 
 export const PaperWrapper = styled(Paper)(() => ({
   overflow: "hidden",
-  borderRadius: "16px",
+  borderRadius: "8px",
   padding: "16px",
   margin: "16px 0",
 }));

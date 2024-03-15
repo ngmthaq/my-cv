@@ -34,7 +34,6 @@ const Container = styled(Box)(() => ({
 const NavButton = styled(Button)(() => ({
   color: "#999999",
   fontWeight: "bold",
-  textTransform: "capitalize",
   display: "flex",
   alignItems: "center",
   gap: "8px",
@@ -42,7 +41,6 @@ const NavButton = styled(Button)(() => ({
 
   "&.active": {
     color: "#1e1e1e",
-    borderBottom: "2px solid #1e1e1e",
     borderRadius: "0px",
     pointerEvents: "none",
   },
