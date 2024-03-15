@@ -125,3 +125,8 @@ body {
     line-clamp: 1;
     -webkit-box-orient: vertical;
 }
+
+.sticky-component {
+    position: sticky;
+    top: 8px;
+}

@@ -23,7 +23,7 @@ const ProfileLeft = () => {
         </AboutContent>
         <AboutContent>
           <Phone fontSize="small" />
-          038 988 4507
+          +84 38 988 4507
         </AboutContent>
       </PaperWrapper>
       <PaperWrapper>

@@ -1,0 +1,56 @@
+[
+  {
+    "id": "bglobal",
+    "minutes": 5,
+    "isWorkspace": true,
+    "title": "Software Engineer at bGlobal Jsc",
+    "time": "04/2022 - now",
+    "workType": "Full-time",
+    "image": "/bglobal.png"
+  },
+  {
+    "id": "uxv",
+    "minutes": 10,
+    "isWorkspace": true,
+    "title": "Frontend Developer at Unified X, Inc.",
+    "time": "01/2023 - 01/2024",
+    "workType": "Freelance",
+    "image": "/uxv.png"
+  },
+  {
+    "id": "sun",
+    "minutes": 15,
+    "isWorkspace": true,
+    "title": "Frontend Intern at Sun* Inc.",
+    "time": "02/2022 - 04/2022",
+    "workType": "Full-time",
+    "image": "/sun.png"
+  },
+  {
+    "id": "vietis",
+    "minutes": 20,
+    "isWorkspace": true,
+    "title": "Backend Intern at VietIS Software Corporation",
+    "time": "11/2021 - 02/2022",
+    "workType": "Part-time",
+    "image": "/vietis.jpg"
+  },
+  {
+    "id": "itplus",
+    "minutes": 25,
+    "isWorkspace": false,
+    "title": "Studying at ITPlus Institute of Information Technology",
+    "time": "2020 - 2021",
+    "workType": "Professional Website Design With PHP, Laravel and MySQL",
+    "image": "/itplus.jpg"
+  },
+  {
+    "id": "tmu",
+    "minutes": 30,
+    "isWorkspace": false,
+    "title": "Studying at Thuong Mai University",
+    "time": "2018 - 2021",
+    "workType": "Faculty of Economic Information Systems and E-commerce",
+    "image": "/tmu.png"
+  }
+]

@@ -2,8 +2,9 @@ import { memo, useContext } from "react";
 import { Button, Grid } from "@mui/material";
 import ProfileLeft from "./ProfileLeft";
 import ProfileContactForm from "./ProfileContactForm";
-import ProfileRight from "./ProfileRight";
+import ProfilePost from "./ProfilePost";
 import { AppContext } from "../App";
+import profiles from "../data/profiles.json";
 
 const Profile = () => {
   const { handleClickProjectsTab } = useContext(AppContext);
@@ -15,8 +16,14 @@ const Profile = () => {
       </Grid>
       <Grid item xs={12} sm={12} md={12} lg={8} xl={8}>
         <ProfileContactForm />
-        <ProfileRight />
-        <Button fullWidth={true} size="large" onClick={handleClickProjectsTab} sx={{ textAlign: "center" }}>
+        {profiles.map((profile, index) => (
+          <ProfilePost key={index} {...profile} />
+        ))}
+        <Button
+          fullWidth={true}
+          size="large"
+          onClick={handleClickProjectsTab}
+          sx={{ textAlign: "center", marginBottom: "32px" }}>
           Do you want to see all of my projects?
         </Button>
       </Grid>
