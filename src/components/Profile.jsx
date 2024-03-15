@@ -9,6 +9,11 @@ import profiles from "../data/profiles.json";
 const Profile = () => {
   const { handleClickProjectsTab } = useContext(AppContext);
 
+  const handleClickButton = () => {
+    handleClickProjectsTab();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <Grid container spacing={4}>
       <Grid item xs={12} sm={12} md={12} lg={4} xl={4}>
@@ -22,7 +27,7 @@ const Profile = () => {
         <Button
           fullWidth={true}
           size="large"
-          onClick={handleClickProjectsTab}
+          onClick={handleClickButton}
           sx={{ textAlign: "center", marginBottom: "32px" }}>
           Do you want to see all of my projects?
         </Button>

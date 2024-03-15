@@ -7,11 +7,15 @@ export const PaperContainer = styled(Paper)(() => ({
   borderRadius: "8px",
 }));
 
-export const PaperWrapper = styled(Paper)(() => ({
+export const PaperWrapper = styled(Paper)(({ theme }) => ({
   overflow: "hidden",
   borderRadius: "8px",
   padding: "16px",
   margin: "16px 0",
+
+  [theme.breakpoints.down("md")]: {
+    marginTop: "0px",
+  },
 }));
 
 export const PaperTitle = styled(Typography)(() => ({

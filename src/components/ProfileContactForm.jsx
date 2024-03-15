@@ -8,7 +8,7 @@ const ProfileContactForm = () => {
   return (
     <PaperWrapper>
       <form>
-        <Box display="flex" alignItems="center" gap="16px" marginBottom="16px">
+        <TextFieldWrapper>
           <CustomTextField
             required={true}
             fullWidth={true}
@@ -25,7 +25,7 @@ const ProfileContactForm = () => {
             placeholder="What is your email?"
             variant="outlined"
           />
-        </Box>
+        </TextFieldWrapper>
         <CustomTextField
           fullWidth={true}
           required={true}
@@ -37,7 +37,7 @@ const ProfileContactForm = () => {
           placeholder="Share what you are thinking here..."
           variant="outlined"
         />
-        <Box display="flex" justifyContent="space-between" alignItems="center">
+        <ButtonWrapper display="flex" justifyContent="space-between" alignItems="center">
           <Typography variant="caption">Let me know if you need a software engineer</Typography>
           <Button
             type="button"
@@ -47,7 +47,7 @@ const ProfileContactForm = () => {
             startIcon={<Send />}>
             Send
           </Button>
-        </Box>
+        </ButtonWrapper>
       </form>
     </PaperWrapper>
   );
@@ -55,8 +55,39 @@ const ProfileContactForm = () => {
 
 export default memo(ProfileContactForm);
 
-export const CustomTextField = styled(TextField)(() => ({
+const TextFieldWrapper = styled(Box)(({ theme }) => ({
+  display: "flex",
+  alignItems: "center",
+  gap: "16px",
+  marginBottom: "16px",
+
+  [theme.breakpoints.down("md")]: {
+    flexDirection: "column",
+  },
+}));
+
+const CustomTextField = styled(TextField)(() => ({
   "& .MuiInputBase-root": {
     borderRadius: "6px",
+  },
+}));
+
+const ButtonWrapper = styled(Box)(({ theme }) => ({
+  display: "flex",
+  alignItems: "center",
+  justifyContent: "space-between",
+
+  [theme.breakpoints.down("md")]: {
+    flexDirection: "column",
+
+    "& > span": {
+      textAlign: "center",
+      display: "block",
+      marginBottom: "16px",
+    },
+
+    "& > button": {
+      width: "100%",
+    },
   },
 }));

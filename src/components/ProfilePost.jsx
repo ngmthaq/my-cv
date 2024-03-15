@@ -55,6 +55,10 @@ const Body = styled(Box)(() => ({
   alignItems: "center",
   justifyContent: "center",
   padding: "16px",
+
+  "& *": {
+    textAlign: "center",
+  },
 }));
 
 const IconWrapper = styled(Box)(() => ({

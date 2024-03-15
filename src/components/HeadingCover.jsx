@@ -1,8 +1,9 @@
 import { memo } from "react";
-import { Box } from "@mui/material";
+import { Box, IconButton } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import HeadingAvatar from "./HeadingAvatar";
 import cover from "../assets/images/cover.jpg";
+import { Menu } from "@mui/icons-material";
 
 const HeadingCover = () => {
   return (
@@ -10,6 +11,9 @@ const HeadingCover = () => {
       <img src={cover} alt="cover" />
       <Modal />
       <HeadingAvatar />
+      <DrawerButton size="large">
+        <Menu fontSize="large" htmlColor="#fff" />
+      </DrawerButton>
     </Container>
   );
 };
@@ -37,4 +41,16 @@ const Modal = styled(Box)(() => ({
   height: "100%",
   background: "linear-gradient(rgba(0, 75, 80, 0.8), rgba(0, 75, 80, 0.8))",
   zIndex: "1",
+}));
+
+const DrawerButton = styled(IconButton)(({ theme }) => ({
+  position: "absolute",
+  top: "8px",
+  right: "8px",
+  zIndex: "2",
+  display: "none",
+
+  [theme.breakpoints.down("md")]: {
+    display: "flex",
+  },
 }));

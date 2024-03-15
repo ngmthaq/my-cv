@@ -1,13 +1,17 @@
 import { memo } from "react";
 import { Avatar, Box, Typography } from "@mui/material";
+import { useMediaQuery, useTheme } from "@mui/material";
 import { styled } from "@mui/material/styles";
 
 const HeadingAvatar = () => {
+  const theme = useTheme();
+  const isUpSM = useMediaQuery(theme.breakpoints.up("sm"));
+
   return (
     <BoxContainer id="heading-avatar">
-      <Avatar alt="Nguyen Manh Thang" src="/icon.png" sx={{ width: 160, height: 160 }} />
-      <Box sx={{ paddingBottom: "24px" }}>
-        <Typography variant="h4" sx={{ color: "#ffffff", marginBottom: "4px" }}>
+      <Avatar alt="Nguyen Manh Thang" src="/icon.png" sx={{ width: isUpSM ? 160 : 100, height: isUpSM ? 160 : 100 }} />
+      <Box sx={{ paddingBottom: "32px" }}>
+        <Typography variant={isUpSM ? "h4" : "h6"} sx={{ color: "#ffffff", marginBottom: "4px" }}>
           Nguyen Manh Thang
         </Typography>
         <Typography variant="subtitle1" sx={{ color: "#f0f0f0" }}>

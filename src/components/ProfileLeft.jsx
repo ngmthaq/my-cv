@@ -1,7 +1,17 @@
 import { Fragment, memo } from "react";
 import { Typography } from "@mui/material";
 import { styled } from "@mui/material/styles";
-import { AlternateEmail, Facebook, GitHub, LinkedIn, LocationOn, Phone, School } from "@mui/icons-material";
+import {
+  Home,
+  AlternateEmail,
+  Facebook,
+  GitHub,
+  LinkedIn,
+  LocationOn,
+  Phone,
+  School,
+  CalendarMonth,
+} from "@mui/icons-material";
 import { PaperTitle, PaperWrapper } from "./Styled";
 
 const ProfileLeft = () => {
@@ -18,12 +28,20 @@ const ProfileLeft = () => {
           Phu Do, Nam Tu Liem, Ha Noi
         </AboutContent>
         <AboutContent>
+          <Home fontSize="small" />
+          Cong Ly, Ly Nhan, Ha Nam
+        </AboutContent>
+        <AboutContent>
           <AlternateEmail fontSize="small" />
           ngmthaq.20@gmail.com
         </AboutContent>
         <AboutContent>
           <Phone fontSize="small" />
           +84 38 988 4507
+        </AboutContent>
+        <AboutContent>
+          <CalendarMonth fontSize="small" />
+          01/12/2000 (DD/MM/YYYY)
         </AboutContent>
       </PaperWrapper>
       <PaperWrapper>
@@ -48,9 +66,9 @@ const ProfileLeft = () => {
           <Facebook fontSize="small" />
           <Typography className="text-1-line">https://www.fb.com/ngmthaq/</Typography>
         </SocialLink>
-        <SocialLink target="_blank" href="https://www.linkedin.com/in/nguyen-manh-thang-62b589157/">
+        <SocialLink target="_blank" href="https://www.linkedin.com/in/ngmthaq/">
           <LinkedIn fontSize="small" />
-          <Typography className="text-1-line">https://www.linkedin.com/in/nguyen-manh-thang-62b589157/</Typography>
+          <Typography className="text-1-line">https://www.linkedin.com/in/ngmthaq/</Typography>
         </SocialLink>
         <SocialLink target="_blank" href="https://github.com/ngmthaq">
           <GitHub fontSize="small" />
