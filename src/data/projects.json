@@ -1,0 +1,101 @@
+[
+  {
+    "id": "trios-web-admin",
+    "name": "Trios Web Admin",
+    "image": "/trios-web-admin-sample.png",
+    "customer": "bGlobal Jsc",
+    "customerAvatar": "/bglobal.png",
+    "teamMembers": "4",
+    "position": "Frontend Team Leader",
+    "description": "This is a website admin located in the company's Trios ecosystem. This is one of the products to manage items in the company's end-to-end encrypted information exchange ecosystem including Desktop Application, Android, IOS devices and system servers.",
+    "technologies": ["Javascript", "React.js", "React-query", "SCSS", "MUI", "Axios"]
+  },
+  {
+    "id": "etc-trans",
+    "name": "ETC Translator",
+    "image": "/etc-trans-sample.webp",
+    "customer": "bGlobal Jsc",
+    "customerAvatar": "/bglobal.png",
+    "teamMembers": "3",
+    "position": "Team Leader",
+    "description": "This is a translation app. This application is used in combination with AI researched by the Vietnam Academy of Science and Technology (IOIT) to translate special languages in Southeast Asia such as: Vietnamese, Thai, Lao , Khmer, Indonesian, Malaysian. The system can translate text and files. For files, the system will extract the content of the file and then translate it, trying to preserve the format of the text as much as possible. Supported document types: TXT, DOCX, HTML, RTF, PDF.",
+    "technologies": ["PHP", "Laravel", "MySQL", "jQuery", "MinIO", "Linux Office Tools"]
+  },
+  {
+    "id": "csb-gd2",
+    "name": "GST - Giam Sat Tau",
+    "image": "/csb-sample.webp",
+    "customer": "bGlobal Jsc",
+    "customerAvatar": "/bglobal.png",
+    "teamMembers": "3",
+    "position": "Frontend Developer",
+    "description": "This is a project to collect data from domestic and foreign ship management sources, process virtual data to one format for the purpose of managing the patrolling of ships in the Vietnam Sea. Assist the Vietnam Marine Police in tracking ship location, searching ships in distress, viewing detailed ship information and many other necessary functions.",
+    "technologies": ["Javascript", "React.js", "Electron.js", "Leaflet.js", "Redux", "Saga", "SCSS", "MUI", "Axios"]
+  },
+  {
+    "id": "sgw",
+    "name": "Secure Gateway",
+    "image": "/sgw-sample.jpg",
+    "customer": "bGlobal Jsc",
+    "customerAvatar": "/bglobal.png",
+    "teamMembers": "4",
+    "position": "Frontend Developer",
+    "description": "This is software that acts as a data connection port. Used to process data, send data from the internet to the WAN. Data passing through this connection port will be encrypted through bGlobal company's Trios encryption system.",
+    "technologies": ["Typescript", "React.js", "Electron.js", "React-query", "SCSS", "MUI", "Axios"]
+  },
+  {
+    "id": "trios-desktop-app",
+    "name": "Trios Desktop App",
+    "image": "/trios-desktop-app-sample.png",
+    "customer": "bGlobal Jsc",
+    "customerAvatar": "/bglobal.png",
+    "teamMembers": "3",
+    "position": "Frontend Developer",
+    "description": "This is an application for messaging, calling, online conferencing and applying end-to-end encryption (E2E) technology. The application can run on all 3 operating systems Window, MacOS and Linux. This is one of the three main products in the company's Trios end-to-end encrypted information exchange application ecosystem, including Desktop App, IOS and Android.",
+    "technologies": ["Javascript", "React.js", "Electron.js", "Redux", "Saga", "SCSS", "MUI", "Axios"]
+  },
+  {
+    "id": "blayn-web-admin",
+    "name": "Blayn Web Admin",
+    "image": "/blayn-web-admin-sample.jpg",
+    "customer": "bGlobal Jsc",
+    "customerAvatar": "/bglobal.png",
+    "teamMembers": "3",
+    "position": "Fullstack Developer",
+    "description": "This is the admin website for the purpose of managing customer's POS devices. The application has the function of managing the pos machines that the shop owns, managing each category and product of each POS machine of the shop. Supports creating and managing catalogs by importing/exporting CSV files. In addition, the application also supports creating product sales report diagrams by shop and many other additional functions.",
+    "technologies": ["PHP", "MySQL", "jQuery", "Smarty Template Engine"]
+  },
+  {
+    "id": "pdf-viewer",
+    "name": "PDF Viewer",
+    "image": "/pdf-viewer-sample.webp",
+    "customer": "Unified X, Inc",
+    "customerAvatar": "/uxv.png",
+    "teamMembers": "2",
+    "position": "Team Leader",
+    "description": "This is an application which can reads PDF files in the ecosystem of UXVN company. This application performs the same functions as other PDFViewer, but it will be able to customize according to the needs of the user, set up security by encrypting the password of the PDF file. Only users who have permission to view documents can open files and read them on the MOL PDF Viewer's system.",
+    "technologies": ["PHP", "Pdf.js", "jQuery", "Docker"]
+  },
+  {
+    "id": "shufukita",
+    "name": "Shufukita",
+    "image": "/shufukita-sample.jpg",
+    "customer": "Unified X, Inc",
+    "customerAvatar": "/uxv.png",
+    "teamMembers": "3",
+    "position": "Frontend Team Leader",
+    "description": "This is a website that uses PWA technology to provide a new way to find jobs. The application can work on PC and mobile devices. The functions of the application are to filter jobs, save and delete jobs that are not suitable, view job details, contact the company working, view history of viewed jobs, ...",
+    "technologies": ["Typescript", "React.js", "Redux-toolkit", "SCSS", "MUI", "Firebase", "Axios", "PWA"]
+  },
+  {
+    "id": "jsmr",
+    "name": "JSMR",
+    "image": "/jsmr-sample.jpg",
+    "customer": "Unified X, Inc",
+    "customerAvatar": "/uxv.png",
+    "teamMembers": "3",
+    "position": "Frontend Developer",
+    "description": "This is an admin website that manages users and events of an academy in Japan. The system allows users to view information about upcoming events at the academy, and then decide to pay to participate in that event. Admin will have the right to manage users, manage events, view user payment status, manage user contributions through the donation system.",
+    "technologies": ["Typescript", "Vue.js", "SCSS", "Bootstrap", "Pinia", "Axios", "Firebase"]
+  }
+]
