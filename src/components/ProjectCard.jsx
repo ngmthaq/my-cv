@@ -13,15 +13,16 @@ const ProjectCard = ({
   position,
   description,
   technologies,
+  onClick,
 }) => {
-  console.log({ id, name, image, customer, customerAvatar, teamMembers, position, description, technologies });
+  const project = { id, name, image, customer, customerAvatar, teamMembers, position, description, technologies };
 
   const projectId = `project-section-${id}`;
 
   return (
     <PaperWrapper id={projectId} sx={{ margin: 0, padding: 0 }}>
       <Container>
-        <Modal />
+        <Modal onClick={() => onClick(project)} />
         <img src={image} alt={name} />
         <PaperIcon>
           <CustomerAvatar src={customerAvatar} alt={customer} />
