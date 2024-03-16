@@ -4,6 +4,7 @@ import ProjectCard from "./ProjectCard";
 import { AppContext } from "../App";
 import projects from "../data/projects.json";
 import ProjectDetailDialog from "./ProjectDetailDialog";
+import { PaperTitle } from "./Styled";
 
 const Projects = () => {
   const { handleClickProfileTab } = useContext(AppContext);
@@ -22,6 +23,9 @@ const Projects = () => {
   return (
     <Fragment>
       <Grid container spacing={2} id="projects">
+        <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+          <PaperTitle sx={{ marginTop: "24px" }}>MY PROJECTS</PaperTitle>
+        </Grid>
         {projects.map((project, index) => (
           <Grid item key={index} xs={12} sm={12} md={6} lg={4} xl={4}>
             <ProjectCard {...project} onClick={setSelectedProject} />

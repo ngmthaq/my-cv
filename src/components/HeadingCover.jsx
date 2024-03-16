@@ -1,20 +1,26 @@
-import { memo } from "react";
+import { Fragment, memo, useState } from "react";
 import { Box, IconButton } from "@mui/material";
 import { styled } from "@mui/material/styles";
-import HeadingAvatar from "./HeadingAvatar";
-import cover from "../assets/images/cover.jpg";
 import { Menu } from "@mui/icons-material";
+import HeadingAvatar from "./HeadingAvatar";
+import HeadingDrawer from "./HeadingDrawer";
+import cover from "../assets/images/cover.jpg";
 
 const HeadingCover = () => {
+  const [isOpenDrawer, setIsOpenDrawer] = useState(false);
+
   return (
-    <Container id="heading-cover">
-      <img src={cover} alt="cover" />
-      <Modal />
-      <HeadingAvatar />
-      <DrawerButton size="large">
-        <Menu fontSize="large" htmlColor="#fff" />
-      </DrawerButton>
-    </Container>
+    <Fragment>
+      <Container id="heading-cover">
+        <img src={cover} alt="cover" />
+        <Modal />
+        <HeadingAvatar />
+        <DrawerButton size="large" onClick={() => setIsOpenDrawer(true)}>
+          <Menu fontSize="large" htmlColor="#fff" />
+        </DrawerButton>
+      </Container>
+      <HeadingDrawer open={isOpenDrawer} onClose={() => setIsOpenDrawer(false)} />
+    </Fragment>
   );
 };
 
