@@ -17,8 +17,6 @@ import Box from "@mui/material/Box";
 import Avatar from "@mui/material/Avatar";
 
 const ProjectDetailDialog = ({ open, onClose, project }) => {
-  console.log(project);
-
   return (
     <Dialog fullScreen open={open} onClose={onClose} TransitionComponent={Transition}>
       <AppBar sx={{ position: "relative" }}>
@@ -32,9 +30,9 @@ const ProjectDetailDialog = ({ open, onClose, project }) => {
         </Toolbar>
       </AppBar>
       {project && (
-        <Box sx={{ padding: "32px" }}>
+        <Box sx={{ padding: "32px 16px" }}>
           <TableContainer component={Paper}>
-            <Table sx={{ minWidth: 650 }} aria-label="simple table">
+            <Table>
               <TableBody>
                 <TableRow>
                   <TableCell>
@@ -77,7 +75,7 @@ const ProjectDetailDialog = ({ open, onClose, project }) => {
                   </TableCell>
                   <TableCell>
                     {project.technologies.map((tech, index) => (
-                      <Chip key={index} label={tech} color="primary" variant="outlined" sx={{ marginRight: "8px" }} />
+                      <Chip key={index} label={tech} color="primary" variant="outlined" sx={{ margin: "4px" }} />
                     ))}
                   </TableCell>
                 </TableRow>
