@@ -63,7 +63,7 @@ const ProjectDetailDialog = ({ open, onClose, project }) => {
                   <TableCell>
                     <strong>Team Members</strong>
                   </TableCell>
-                  <TableCell>{project.teamMembers}</TableCell>
+                  <TableCell>{project.teamMembers} developers</TableCell>
                 </TableRow>
                 <TableRow>
                   <TableCell>

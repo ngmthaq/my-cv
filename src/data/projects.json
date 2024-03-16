@@ -5,7 +5,7 @@
     "image": "/trios-web-admin-sample.png",
     "customer": "bGlobal Jsc",
     "customerAvatar": "/bglobal.png",
-    "teamMembers": "4",
+    "teamMembers": "3",
     "position": "Frontend Team Leader",
     "description": "This is a website admin located in the company's Trios ecosystem. \nThis is one of the products to manage items in the company's end-to-end encrypted information exchange ecosystem including Desktop Application, Android, IOS devices and system servers.",
     "technologies": ["Javascript", "React.js", "React-query", "SCSS", "MUI", "Axios"]
@@ -49,7 +49,7 @@
     "image": "/trios-desktop-app-sample.png",
     "customer": "bGlobal Jsc",
     "customerAvatar": "/bglobal.png",
-    "teamMembers": "3",
+    "teamMembers": "4",
     "position": "Frontend Developer",
     "description": "This is an application for messaging, calling, online conferencing and applying end-to-end encryption (E2E) technology. \nThe application can run on all 3 operating systems Window, MacOS and Linux. \nThis is one of the three main products in the company's Trios end-to-end encrypted information exchange application ecosystem, including Desktop App, IOS and Android.",
     "technologies": ["Javascript", "React.js", "Electron.js", "Redux", "Saga", "SCSS", "MUI", "Axios", "AES Encryption"]
@@ -60,9 +60,9 @@
     "image": "/blayn-web-admin-sample.jpg",
     "customer": "bGlobal Jsc",
     "customerAvatar": "/bglobal.png",
-    "teamMembers": "3",
+    "teamMembers": "4",
     "position": "Fullstack Developer",
-    "description": "This is the admin website for the purpose of managing customer's POS devices. \nThe application has the function of managing the pos machines that the shop owns, managing each category and product of each POS machine of the shop. Supports creating and managing catalogs by importing/exporting CSV files. \nIn addition, the application also supports creating product sales report diagrams by shop and many other additional functions.",
+    "description": "This is the admin website for the purpose of managing customer's POS devices. \nThe application has the function of managing the pos machines that the shop owns, managing each category and product of each POS machine of the shop. \nSupports creating and managing catalogs by importing/exporting CSV files. \nIn addition, the application also supports creating product sales report diagrams by shop and many other additional functions.",
     "technologies": ["PHP", "MySQL", "jQuery", "Smarty Template Engine"]
   },
   {

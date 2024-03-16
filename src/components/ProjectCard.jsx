@@ -30,7 +30,7 @@ const ProjectCard = ({
         <HintText variant="caption">Image for illustrative purposes only</HintText>
         <ProjectName>{name}</ProjectName>
         <ProjectDesc>
-          {position} | {teamMembers} members
+          {position} | {teamMembers} developers
         </ProjectDesc>
       </Container>
     </PaperWrapper>

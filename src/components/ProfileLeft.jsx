@@ -13,6 +13,7 @@ import {
   CalendarMonth,
 } from "@mui/icons-material";
 import { PaperTitle, PaperWrapper } from "./Styled";
+import general from "../data/general.json";
 
 const ProfileLeft = () => {
   return (
@@ -21,58 +22,48 @@ const ProfileLeft = () => {
         <PaperTitle>About</PaperTitle>
         <AboutContent>
           <School fontSize="small" />
-          Thuong Mai University
+          {general.school}
         </AboutContent>
         <AboutContent>
           <LocationOn fontSize="small" />
-          Phu Do, Nam Tu Liem, Ha Noi
+          {general.location}
         </AboutContent>
         <AboutContent>
           <Home fontSize="small" />
-          Cong Ly, Ly Nhan, Ha Nam
+          {general.home}
         </AboutContent>
         <AboutContent>
           <AlternateEmail fontSize="small" />
-          ngmthaq.20@gmail.com
+          {general.email}
         </AboutContent>
         <AboutContent>
           <Phone fontSize="small" />
-          +84 38 988 4507
+          {general.phone}
         </AboutContent>
         <AboutContent>
           <CalendarMonth fontSize="small" />
-          01/12/2000 (DD/MM/YYYY)
+          {general.dob}
         </AboutContent>
       </PaperWrapper>
       <PaperWrapper>
         <PaperTitle>General</PaperTitle>
-        <General>
-          - Experienced in many Frontend projects. Having knowledge of HTML, CSS, SCSS, JS, TS, jQuery, React.js,
-          Vue.js, Bootstrap and Material UI.
-        </General>
-        <General>
-          - Ability to work with backend through PHP and Laravel. Basic knowledge of Node.js and Electron.js.
-        </General>
-        <General>- Have basic knowledge of SQL queries, MySQL, SQLite.</General>
-        <General>
-          - Know how to use git commands, git tools such as Github Desktop, Jetbrains IDE Git Tools and Git Graph.
-        </General>
-        <General>- Used via Github, Gitlab and BitBucket.</General>
-        <General>- Use Docker at a basic level.</General>
+        {general.generalDetails.map((detail, index) => (
+          <General key={index}>{detail}</General>
+        ))}
       </PaperWrapper>
       <PaperWrapper>
         <PaperTitle>Social</PaperTitle>
-        <SocialLink target="_blank" href="https://www.facebook.com/ngmthaq/">
+        <SocialLink target="_blank" href={general.socials.facebook.link}>
           <Facebook fontSize="small" />
-          <Typography className="text-1-line">https://www.fb.com/ngmthaq/</Typography>
+          <Typography className="text-1-line">{general.socials.facebook.title}</Typography>
         </SocialLink>
-        <SocialLink target="_blank" href="https://www.linkedin.com/in/ngmthaq/">
+        <SocialLink target="_blank" href={general.socials.linkedin.link}>
           <LinkedIn fontSize="small" />
-          <Typography className="text-1-line">https://www.linkedin.com/in/ngmthaq/</Typography>
+          <Typography className="text-1-line">{general.socials.linkedin.title}</Typography>
         </SocialLink>
-        <SocialLink target="_blank" href="https://github.com/ngmthaq">
+        <SocialLink target="_blank" href={general.socials.github.link}>
           <GitHub fontSize="small" />
-          <Typography className="text-1-line">https://github.com/ngmthaq</Typography>
+          <Typography className="text-1-line">{general.socials.github.title}</Typography>
         </SocialLink>
       </PaperWrapper>
     </Fragment>

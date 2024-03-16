@@ -1,0 +1,30 @@
+{
+  "school": "Thuong Mai University",
+  "location": "Phu Do, Nam Tu Liem, Ha Noi",
+  "home": "Cong Ly, Ly Nhan, Ha Nam",
+  "email": "ngmthaq.20@gmail.com",
+  "phone": "+84 38 988 4507",
+  "dob": "01/12/2000 (DD/MM/YYYY)",
+  "generalDetails": [
+    "- Experienced in many Frontend projects. Having knowledge of HTML, CSS, SCSS, JS, TS, jQuery, React.js, Vue.js, Bootstrap and Material UI.",
+    "- Ability to work with backend through PHP and Laravel. Basic knowledge of Node.js and Electron.js.",
+    "- Have basic knowledge of SQL queries, MySQL, SQLite.",
+    "- Know how to use git commands, git tools such as Github Desktop, Jetbrains IDE Git Tools and Git Graph.",
+    "- Used via Github, Gitlab and BitBucket.",
+    "- Use Docker at a basic level."
+  ],
+  "socials": {
+    "facebook": {
+      "link": "https://www.facebook.com/ngmthaq",
+      "title": "https://www.fb.com/ngmthaq"
+    },
+    "linkedin": {
+      "link": "https://www.linkedin.com/in/ngmthaq",
+      "title": "https://www.linked.in/ngmthaq"
+    },
+    "github": {
+      "link": "https://github.com/ngmthaq",
+      "title": "https://github.com/ngmthaq"
+    }
+  }
+}
