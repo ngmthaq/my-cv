@@ -30,7 +30,7 @@ const ProjectCard = ({
         <HintText variant="caption">Image for illustrative purposes only</HintText>
         <ProjectName>{name}</ProjectName>
         <ProjectDesc>
-          {position} | {teamMembers} developers
+          {position} | {teamMembers} {teamMembers === 1 ? "developer" : "developers"}
         </ProjectDesc>
       </Container>
     </PaperWrapper>
