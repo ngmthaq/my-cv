@@ -1,34 +1,91 @@
-import { memo } from "react";
-import { Box, Button, TextField, Typography } from "@mui/material";
+import { memo, useEffect, useState } from "react";
+import Swal from "sweetalert2";
+import { Box, TextField, Typography } from "@mui/material";
+import LoadingButton from "@mui/lab/LoadingButton";
 import { styled } from "@mui/material/styles";
-import { PaperWrapper } from "./Styled";
 import { Send } from "@mui/icons-material";
+import { PaperWrapper } from "./Styled";
+import { useSendFeedback } from "../firebase";
+import Utils from "../utils";
 
 const ProfileContactForm = () => {
+  const { status, submit } = useSendFeedback();
+
+  const [form, setForm] = useState({ name: "", email: "", content: "" });
+
+  const handleChangeInput = (event) => {
+    setForm((currentForm) => ({ ...currentForm, [event.target.name]: event.target.value }));
+  };
+
+  const handleSubmit = () => {
+    if (form.name.trim().length === 0) {
+      Swal.fire({
+        icon: "error",
+        title: "Failure Validation",
+        text: "Please fill out all fields completely",
+      });
+    } else if (form.email.trim().length === 0) {
+      Swal.fire({
+        icon: "error",
+        title: "Failure Validation",
+        text: "Please fill out all fields completelyPlease fill out all fields completely",
+      });
+    } else if (form.content.trim().length === 0) {
+      Swal.fire({
+        icon: "error",
+        title: "Failure Validation",
+        text: "Please fill out all fields completelyPlease fill out all fields completely",
+      });
+    } else if (!Utils.Str.validateEmail(form.email)) {
+      Swal.fire({
+        icon: "error",
+        title: "Failure Validation",
+        text: "Please enter the correct email format",
+      });
+    } else {
+      submit(form);
+    }
+  };
+
+  useEffect(() => {
+    if (status === "success") {
+      Swal.fire({
+        icon: "success",
+        title: "Thank you",
+        text: "I have received your response and will reply to you ASAP",
+      });
+    } else if (status === "error") {
+      Swal.fire({
+        icon: "error",
+        title: "Oops...",
+        text: "Something went wrong, please try again later",
+      });
+    }
+  }, [status]);
+
   return (
     <PaperWrapper>
       <form>
         <TextFieldWrapper>
           <CustomTextField
-            required={true}
             fullWidth={true}
             type="text"
             name="name"
             placeholder="What is your name?"
             variant="outlined"
+            onChange={handleChangeInput}
           />
           <CustomTextField
-            required={true}
             fullWidth={true}
             type="email"
             name="email"
             placeholder="What is your email?"
             variant="outlined"
+            onChange={handleChangeInput}
           />
         </TextFieldWrapper>
         <CustomTextField
           fullWidth={true}
-          required={true}
           multiline={true}
           rows={6}
           sx={{ marginBottom: "16px" }}
@@ -36,17 +93,21 @@ const ProfileContactForm = () => {
           name="content"
           placeholder="Share what you are thinking here..."
           variant="outlined"
+          onChange={handleChangeInput}
         />
         <ButtonWrapper display="flex" justifyContent="space-between" alignItems="center">
           <Typography variant="caption">Let me know if you need a software engineer</Typography>
-          <Button
+          <LoadingButton
             type="button"
             variant="contained"
             size="large"
+            loadingPosition="start"
             sx={{ borderRadius: "8px", minWidth: "120px" }}
-            startIcon={<Send />}>
+            startIcon={<Send />}
+            onClick={handleSubmit}
+            loading={status === "loading"}>
             Send
-          </Button>
+          </LoadingButton>
         </ButtonWrapper>
       </form>
     </PaperWrapper>

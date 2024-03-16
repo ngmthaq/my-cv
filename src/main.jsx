@@ -1,7 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
-import "./assets/css/style.css";
+import "sweetalert2/src/sweetalert2.scss";
+import "./assets/scss/style.scss";
 
 const root = document.getElementById("root");
 
