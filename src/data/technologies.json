@@ -1,0 +1,110 @@
+[
+  {
+    "logo": "/html.webp",
+    "name": "HTML"
+  },
+  {
+    "logo": "/css.jpg",
+    "name": "CSS"
+  },
+  {
+    "logo": "/scss.webp",
+    "name": "SCSS"
+  },
+  {
+    "logo": "/bootstrap.png",
+    "name": "Bootstrap"
+  },
+  {
+    "logo": "/mui.png",
+    "name": "MUI"
+  },
+  {
+    "logo": "/javascript.jpeg",
+    "name": "Javascript"
+  },
+  {
+    "logo": "/jquery.webp",
+    "name": "jQuery"
+  },
+  {
+    "logo": "/typescript.png",
+    "name": "Typescript"
+  },
+  {
+    "logo": "/reactjs.png",
+    "name": "React.js"
+  },
+  {
+    "logo": "/nextjs.jpg",
+    "name": "Next.js"
+  },
+  {
+    "logo": "/vuejs.jpeg",
+    "name": "Vue.js"
+  },
+  {
+    "logo": "/nodejs.png",
+    "name": "Node.js"
+  },
+  {
+    "logo": "/expressjs.png",
+    "name": "Express.js"
+  },
+  {
+    "logo": "/electronjs.png",
+    "name": "Electron.js"
+  },
+  {
+    "logo": "/php.webp",
+    "name": "PHP"
+  },
+  {
+    "logo": "/laravel.png",
+    "name": "Laravel"
+  },
+  {
+    "logo": "/mysql.webp",
+    "name": "MySQL"
+  },
+  {
+    "logo": "/sqlite.png",
+    "name": "SQLite"
+  },
+  {
+    "logo": "/docker.png",
+    "name": "Docker"
+  },
+  {
+    "logo": "/firebase.jpg",
+    "name": "Firebase"
+  },
+  {
+    "logo": "/linux.png",
+    "name": "Linux"
+  },
+  {
+    "logo": "/git.png",
+    "name": "Git"
+  },
+  {
+    "logo": "/github.png",
+    "name": "Github"
+  },
+  {
+    "logo": "/gitlab.png",
+    "name": "Gitlab"
+  },
+  {
+    "logo": "/bitbucket.png",
+    "name": "BitBucket"
+  },
+  {
+    "logo": "/jira.png",
+    "name": "Jira"
+  },
+  {
+    "logo": "/confluence.png",
+    "name": "Confluence"
+  }
+]

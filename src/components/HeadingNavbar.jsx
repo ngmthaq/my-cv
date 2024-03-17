@@ -2,13 +2,13 @@ import { Fragment, memo, useContext } from "react";
 import { useMediaQuery, useTheme } from "@mui/material";
 import { Box, Button } from "@mui/material";
 import { styled } from "@mui/material/styles";
-import { AccountCircle, Source } from "@mui/icons-material";
-import { AppContext, PROFILE_TAB, PROJECTS_TAB } from "../App";
+import { AccountCircle, Source, DataObject } from "@mui/icons-material";
+import { AppContext, PROFILE_TAB, PROJECTS_TAB, TECHNOLOGIES_TAB } from "../App";
 
 const HeadingNavbar = () => {
   const theme = useTheme();
   const isUpMD = useMediaQuery(theme.breakpoints.up("md"));
-  const { tab, handleClickProfileTab, handleClickProjectsTab } = useContext(AppContext);
+  const { tab, handleClickProfileTab, handleClickProjectsTab, handleClickTechnologiesTab } = useContext(AppContext);
 
   return (
     <Container id="heading-navbar">
@@ -21,6 +21,13 @@ const HeadingNavbar = () => {
           <NavButton size="large" className={tab === PROJECTS_TAB ? "active" : ""} onClick={handleClickProjectsTab}>
             <Source />
             Projects
+          </NavButton>
+          <NavButton
+            size="large"
+            className={tab === TECHNOLOGIES_TAB ? "active" : ""}
+            onClick={handleClickTechnologiesTab}>
+            <DataObject />
+            Technologies
           </NavButton>
         </Fragment>
       )}

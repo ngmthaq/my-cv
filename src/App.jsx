@@ -5,6 +5,7 @@ import InitialLoading from "./components/InitialLoading";
 import Heading from "./components/Heading";
 import Profile from "./components/Profile";
 import Projects from "./components/Projects";
+import Technologies from "./components/Technologies";
 
 export const AppContext = createContext({});
 
@@ -31,11 +32,17 @@ const App = () => {
     setTab(PROJECTS_TAB);
   };
 
+  const handleClickTechnologiesTab = () => {
+    handleChangeSearchParams("tab", TECHNOLOGIES_TAB);
+    setTab(TECHNOLOGIES_TAB);
+  };
+
   const ContextValue = {
     searchParams,
     tab,
     handleClickProfileTab,
     handleClickProjectsTab,
+    handleClickTechnologiesTab,
   };
 
   return (
@@ -46,6 +53,7 @@ const App = () => {
         <Heading />
         {tab === PROFILE_TAB && <Profile />}
         {tab === PROJECTS_TAB && <Projects />}
+        {tab === TECHNOLOGIES_TAB && <Technologies />}
       </Container>
     </AppContext.Provider>
   );
@@ -55,4 +63,5 @@ export default App;
 
 export const PROFILE_TAB = "1";
 export const PROJECTS_TAB = "2";
-export const tabs = [PROFILE_TAB, PROJECTS_TAB];
+export const TECHNOLOGIES_TAB = "3";
+export const tabs = [PROFILE_TAB, PROJECTS_TAB, TECHNOLOGIES_TAB];

@@ -1,11 +1,11 @@
 import { memo, useContext } from "react";
 import { Box, Drawer } from "@mui/material";
 import { styled } from "@mui/material/styles";
-import { AppContext, PROFILE_TAB, PROJECTS_TAB } from "../App";
+import { AppContext, PROFILE_TAB, PROJECTS_TAB, TECHNOLOGIES_TAB } from "../App";
 import logo from "../assets/images/cover.jpg";
 
 const HeadingDrawer = ({ open, onClose }) => {
-  const { tab, handleClickProfileTab, handleClickProjectsTab } = useContext(AppContext);
+  const { tab, handleClickProfileTab, handleClickProjectsTab, handleClickTechnologiesTab } = useContext(AppContext);
 
   const handleClickProfile = () => {
     handleClickProfileTab();
@@ -14,6 +14,11 @@ const HeadingDrawer = ({ open, onClose }) => {
 
   const handleClickProjects = () => {
     handleClickProjectsTab();
+    onClose();
+  };
+
+  const handleClickTechnologies = () => {
+    handleClickTechnologiesTab();
     onClose();
   };
 
@@ -28,6 +33,9 @@ const HeadingDrawer = ({ open, onClose }) => {
         </a>
         <a className={tab === PROJECTS_TAB ? "active" : ""} onClick={handleClickProjects}>
           Projects
+        </a>
+        <a className={tab === TECHNOLOGIES_TAB ? "active" : ""} onClick={handleClickTechnologies}>
+          Technologies
         </a>
       </MobileDrawerNav>
     </MobileDrawer>
