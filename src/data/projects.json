@@ -18,8 +18,8 @@
     "customerAvatar": "/bglobal.png",
     "teamMembers": 3,
     "position": "Team Leader",
-    "description": "This is a translation app. \nThis application is used in combination with AI researched by the Vietnam Academy of Science and Technology (IOIT) to translate special languages in Southeast Asia such as: Vietnamese, Thai, Lao , Khmer, Indonesian, Malaysian. \nThe system can translate text and files. For files, the system will extract the content of the file and then translate it, trying to preserve the format of the text as much as possible. \nSupported document types: TXT, DOCX, HTML, RTF, PDF.",
-    "technologies": ["PHP", "Laravel", "MySQL", "jQuery", "MinIO", "Linux Office Tools", "Python"]
+    "description": "This is a translation app. \nThis application is used in combination with AI Model developed from Python to translate special languages in Southeast Asia such as: Vietnamese, Thai, Lao , Khmer, Indonesian, Malaysian. \nThe system can translate text and files. For files, the system will extract the content of the file and then translate it, trying to preserve the format of the text as much as possible. \nSupported document types: TXT, DOCX, HTML, RTF, PDF.",
+    "technologies": ["PHP", "Laravel", "MySQL", "jQuery", "MinIO", "Linux Office Tools", "Python", "Docker"]
   },
   {
     "id": "csb-gd2",

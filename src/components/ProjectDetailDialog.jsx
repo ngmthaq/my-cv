@@ -84,6 +84,16 @@ const ProjectDetailDialog = ({ open, onClose, project }) => {
               </TableBody>
             </Table>
           </TableContainer>
+          <Box sx={{ display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column" }}>
+            <Typography sx={{ display: "block", margin: "32px 0 16px" }} variant="caption">
+              **NOTE: Image for illustrative purposes only
+            </Typography>
+            <img
+              src={project.image}
+              alt={project.id}
+              style={{ width: "800px", maxWidth: "100%", height: "auto", borderRadius: "8px" }}
+            />
+          </Box>
         </Box>
       )}
     </Dialog>
