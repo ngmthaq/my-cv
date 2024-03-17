@@ -52,7 +52,7 @@ const ProfileLeft = () => {
         ))}
       </PaperWrapper>
       <PaperWrapper>
-        <PaperTitle>Social</PaperTitle>
+        <PaperTitle>Socials</PaperTitle>
         <SocialLink target="_blank" href={general.socials.facebook.link}>
           <Facebook fontSize="small" />
           <Typography className="text-1-line">{general.socials.facebook.title}</Typography>

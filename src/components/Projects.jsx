@@ -7,12 +7,12 @@ import ProjectDetailDialog from "./ProjectDetailDialog";
 import { PaperTitle } from "./Styled";
 
 const Projects = () => {
-  const { handleClickProfileTab } = useContext(AppContext);
+  const { handleClickTechnologiesTab } = useContext(AppContext);
 
   const [selectedProject, setSelectedProject] = useState(null);
 
   const handleClickButton = () => {
-    handleClickProfileTab();
+    handleClickTechnologiesTab();
     window.scrollTo({ top: 0, behavior: "smooth" });
   };
 
@@ -37,7 +37,7 @@ const Projects = () => {
             size="large"
             onClick={handleClickButton}
             sx={{ textAlign: "center", marginBottom: "32px" }}>
-            Back to profile page
+            Let see my tech stacks
           </Button>
         </Grid>
       </Grid>
