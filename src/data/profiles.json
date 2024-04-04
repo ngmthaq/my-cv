@@ -27,6 +27,15 @@
     "image": "/vietis.jpg"
   },
   {
+    "id": "uxv",
+    "minutes": 10,
+    "isWorkspace": true,
+    "title": "Frontend Developer at Unified X, Inc.",
+    "time": "01/2023 - 01/2024",
+    "workType": "Freelance",
+    "image": "/uxv.png"
+  },
+  {
     "id": "itplus",
     "minutes": 25,
     "isWorkspace": false,
