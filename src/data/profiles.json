@@ -1,10 +1,19 @@
 [
   {
-    "id": "bglobal",
+    "id": "cmc",
     "minutes": 5,
     "isWorkspace": true,
+    "title": "Software Engineer at CMC Global",
+    "time": "04/2024 - now",
+    "workType": "Full-time",
+    "image": "/cmc.jpg"
+  },
+  {
+    "id": "bglobal",
+    "minutes": 10,
+    "isWorkspace": true,
     "title": "Software Engineer at bGlobal Jsc",
-    "time": "04/2022 - now",
+    "time": "04/2022 - 04/2024",
     "workType": "Full-time",
     "image": "/bglobal.png"
   },
