@@ -4,7 +4,7 @@ import { styled } from "@mui/material/styles";
 import { PaperWrapper } from "./Styled";
 import { BusinessCenter, School } from "@mui/icons-material";
 
-const ProfilePost = ({ minutes, image, isWorkspace, title, time, workType, id }) => {
+const ProfilePost = ({ image, isWorkspace, title, time, workType, id }) => {
   const sectionId = `profile-section-${id}`;
 
   return (
@@ -13,7 +13,7 @@ const ProfilePost = ({ minutes, image, isWorkspace, title, time, workType, id })
         <Avatar alt="Nguyen Manh Thang" src="/icon.png" sx={{ width: 50, height: 50 }} />
         <Box>
           <Typography fontWeight="600">Nguyen Manh Thang</Typography>
-          <Typography variant="caption">{minutes} minutes ago</Typography>
+          <Typography variant="caption">{time}</Typography>
         </Box>
       </Heading>
       <Body>
@@ -31,9 +31,6 @@ const ProfilePost = ({ minutes, image, isWorkspace, title, time, workType, id })
         </IconWrapper>
         <Typography fontWeight="600" marginBottom="8px">
           {title}
-        </Typography>
-        <Typography variant="subtitle2" marginBottom="8px">
-          {time}
         </Typography>
         <Typography variant="subtitle1">{workType}</Typography>
       </Body>

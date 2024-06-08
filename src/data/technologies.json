@@ -16,6 +16,10 @@
     "name": "Bootstrap"
   },
   {
+    "logo": "/tailwindcss.jpg",
+    "name": "Tailwind"
+  },
+  {
     "logo": "/mui.png",
     "name": "MUI"
   },
@@ -32,6 +36,10 @@
     "name": "Typescript"
   },
   {
+    "logo": "/electronjs.png",
+    "name": "Electron.js"
+  },
+  {
     "logo": "/reactjs.png",
     "name": "React.js"
   },
@@ -44,16 +52,20 @@
     "name": "Vue.js"
   },
   {
+    "logo": "/nuxtjs.jpeg",
+    "name": "Nuxt.js"
+  },
+  {
+    "logo": "/angular.png",
+    "name": "Angular"
+  },
+  {
     "logo": "/nodejs.png",
     "name": "Node.js"
   },
   {
     "logo": "/expressjs.png",
     "name": "Express.js"
-  },
-  {
-    "logo": "/electronjs.png",
-    "name": "Electron.js"
   },
   {
     "logo": "/php.webp",
