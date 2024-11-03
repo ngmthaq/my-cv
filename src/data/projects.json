@@ -3,18 +3,18 @@
     "id": "trios-web-admin",
     "name": "T***s Web Admin",
     "image": "/trios-web-admin-sample.png",
-    "customer": "******l Jsc",
+    "customer": "bGlobal Jsc",
     "customerAvatar": "/bglobal.png",
     "teamMembers": 8,
     "position": "Frontend Team Leader",
     "description": "This is a website admin located in the company's T***s ecosystem. \nThis is one of the products to manage items in the company's end-to-end encrypted information exchange ecosystem including Desktop Application, Android, IOS devices and system servers.",
-    "technologies": ["Javascript", "React.js", "React-query", "SCSS", "MUI", "Axios"]
+    "technologies": ["Javascript", "React.js", "React Query", "SCSS", "MUI", "Axios"]
   },
   {
     "id": "etc-trans",
-    "name": "E***TC Translator",
+    "name": "E**",
     "image": "/etc-trans-sample.webp",
-    "customer": "******l Jsc",
+    "customer": "bGlobal Jsc",
     "customerAvatar": "/bglobal.png",
     "teamMembers": 8,
     "position": "Team Leader",
@@ -23,9 +23,9 @@
   },
   {
     "id": "csb-gd2",
-    "name": "G**ST - Giam *** ***",
+    "name": "G***",
     "image": "/csb-sample.webp",
-    "customer": "******l Jsc",
+    "customer": "bGlobal Jsc",
     "customerAvatar": "/bglobal.png",
     "teamMembers": 9,
     "position": "Frontend Developer",
@@ -34,20 +34,20 @@
   },
   {
     "id": "sgw",
-    "name": "S****e Gateway",
+    "name": "T***s Secure Gateway",
     "image": "/sgw-sample.jpg",
-    "customer": "******l Jsc",
+    "customer": "bGlobal Jsc",
     "customerAvatar": "/bglobal.png",
     "teamMembers": 7,
     "position": "Frontend Developer",
     "description": "This is software that acts as a data connection port. \nUsed to process data, send data from the internet to the WAN. \nData passing through this connection port will be encrypted through bGlobal company's T***s encryption system.",
-    "technologies": ["Typescript", "React.js", "Electron.js", "React-query", "SCSS", "MUI", "Axios", "AES Encryption"]
+    "technologies": ["Typescript", "React.js", "Electron.js", "React Query", "SCSS", "MUI", "Axios", "AES Encryption"]
   },
   {
     "id": "trios-desktop-app",
     "name": "T***s Desktop App",
     "image": "/trios-desktop-app-sample.png",
-    "customer": "******l Jsc",
+    "customer": "bGlobal Jsc",
     "customerAvatar": "/bglobal.png",
     "teamMembers": 6,
     "position": "Frontend Developer",
@@ -58,7 +58,7 @@
     "id": "blayn-web-admin",
     "name": "B***n Web Admin",
     "image": "/blayn-web-admin-sample.jpg",
-    "customer": "******l Jsc",
+    "customer": "bGlobal Jsc",
     "customerAvatar": "/bglobal.png",
     "teamMembers": 8,
     "position": "Fullstack Developer",
@@ -67,9 +67,9 @@
   },
   {
     "id": "pdf-viewer",
-    "name": "P***F Viewer",
+    "name": "P** Viewer",
     "image": "/pdf-viewer-sample.webp",
-    "customer": "*********, Inc",
+    "customer": "Unified X Viet Nam Co., Ltd.",
     "customerAvatar": "/uxv.png",
     "teamMembers": 4,
     "position": "Team Leader",
@@ -78,20 +78,20 @@
   },
   {
     "id": "shufukita",
-    "name": "Sh****kita",
+    "name": "Shu******",
     "image": "/shufukita-sample.jpg",
-    "customer": "*********, Inc",
+    "customer": "Unified X Viet Nam Co., Ltd.",
     "customerAvatar": "/uxv.png",
     "teamMembers": 5,
     "position": "Frontend Team Leader",
     "description": "This is a website that uses PWA technology to provide a new way to find jobs. \nThe application can work on PC and mobile devices. \nThe functions of the application are to filter jobs, save and delete jobs that are not suitable, view job details, contact the company working, view history of viewed jobs, ...",
-    "technologies": ["Typescript", "React.js", "Redux-toolkit", "SCSS", "MUI", "Firebase", "Axios", "PWA"]
+    "technologies": ["Typescript", "React.js", "Redux Toolkit", "SCSS", "MUI", "Firebase", "Axios", "PWA"]
   },
   {
     "id": "jsmr",
-    "name": "JS***MR",
+    "name": "JS**",
     "image": "/jsmr-sample.jpg",
-    "customer": "*********, Inc",
+    "customer": "Unified X Viet Nam Co., Ltd.",
     "customerAvatar": "/uxv.png",
     "teamMembers": 4,
     "position": "Frontend Developer",
@@ -100,9 +100,9 @@
   },
   {
     "id": "ddanircrds",
-    "name": "D***** RCRDS",
+    "name": "DD***",
     "image": "/ddanircrds-sample.png",
-    "customer": "D******S",
+    "customer": "DDANI RCRDS",
     "customerAvatar": "/ddanircrds.png",
     "teamMembers": 2,
     "position": "Fullstack Developer",
@@ -111,13 +111,34 @@
   },
   {
     "id": "smdr",
-    "name": "S****** Shipping Line",
+    "name": "Sam*****",
     "image": "/smdra-sample.jpg",
-    "customer": "C** G******",
+    "customer": "CMC Global",
     "customerAvatar": "/cmc.jpg",
     "teamMembers": 8,
     "position": "Frontend Developer",
     "description": "This is a logistics management website for the maritime transport system.",
-    "technologies": ["Typescript", "Angular", "SCSS"]
+    "technologies": ["Typescript", "Angular", "SCSS", "AG Grid", "Axios"]
+  },
+  {
+    "id": "aig3",
+    "name": "CI**** Web Admin",
+    "image": "/ai-vms.png",
+    "customer": "CMC Global",
+    "customerAvatar": "/cmc.jpg",
+    "teamMembers": 6,
+    "position": "Frontend Team Leader",
+    "description": "This is a web portal of an AI product that solved many issue about recognition, automatic attendance, security, ...",
+    "technologies": [
+      "Micro Frontend",
+      "Typescript",
+      "React.js",
+      "Leaflet.js",
+      "Axios",
+      "React Query",
+      "GraphQL",
+      "Apollo Client",
+      "MUI"
+    ]
   }
 ]
